@@ -174,7 +174,7 @@
         let originalTitle = document.title;
         document.addEventListener('visibilitychange', () => {
             if (document.hidden) {
-                document.title = "Come back soon! 🚀";
+                document.title = "Come back soon!";
             } else {
                 document.title = originalTitle;
             }
