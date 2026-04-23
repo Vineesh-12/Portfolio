@@ -3,9 +3,9 @@
 ![Portfolio Preview](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
 ![Tech Stack](https://img.shields.io/badge/Stack-Vanilla_HTML/CSS/JS-030303?style=for-the-badge&logo=javascript)
 
-> **Live Demo:** [vineesh-reddy.vercel.app](https://vineesh-reddy.vercel.app/) *(Replace with your actual Vercel URL if different)*
+> **Live Demo:** [vineesh-reddy.vercel.app](https://vineesh-reddy.vercel.app/)
 
-A highly-optimized, framework-less professional portfolio designed to showcase Full-Stack development and Cloud/DevOps infrastructure skills. Built entirely with vanilla web technologies to demonstrate core browser understanding and maximize performance.
+A highly optimized, framework-less professional portfolio designed to showcase Full-Stack development and Cloud/DevOps infrastructure skills. Built entirely with vanilla web technologies to demonstrate core browser understanding and maximize performance.
 
 ## ⚡ Features & Micro-Interactions
 
@@ -45,9 +45,9 @@ Because this project uses zero build steps, bundlers, or package managers, runni
 
 ## 📬 Contact
 
-- **LinkedIn:** [Your LinkedIn URL]
+- **LinkedIn:** [https://linkedin.com/in/vineesh-reddy-845732326]
 - **GitHub:** [@Vineesh-12](https://github.com/Vineesh-12)
-- **Email:** [Your Email Address]
+- **Email:** [vineeshreddy4@gmail.com]
 
 ---
 *Designed & Engineered by Katta Vineesh Reddy.*
