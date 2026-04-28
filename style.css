@@ -300,25 +300,25 @@
         }
 
         .btn-resume {
-            padding: 8px 20px;
-            background: rgba(255, 255, 255, 0.06);
-            color: var(--text);
+            padding: 8px 18px;
+            background: linear-gradient(135deg, #8b5cf6, #ec4899);
+            color: white;
             border-radius: 8px;
             font-size: 0.82rem;
-            font-weight: 600;
+            font-weight: 700;
             font-family: var(--font-body);
-            border: 1px solid rgba(255, 255, 255, 0.18);
+            border: none;
             transition: all 0.3s var(--ease);
             display: inline-flex;
             align-items: center;
             gap: 7px;
-            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
         }
 
         .btn-resume:hover {
-            background: rgba(255, 255, 255, 0.11);
-            border-color: rgba(255, 255, 255, 0.35);
             transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+            filter: brightness(1.1);
         }
 
         .hamburger {
@@ -2417,16 +2417,15 @@
         }
 
         .btn-resume {
-            box-shadow: none !important;
-            background: rgba(255,255,255,0.06) !important;
-            border: 1px solid rgba(255,255,255,0.18) !important;
-            color: var(--text) !important;
+            background: linear-gradient(135deg, #8b5cf6, #ec4899) !important;
+            color: white !important;
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3) !important;
+            border: none !important;
         }
 
         .btn-resume:hover {
-            background: rgba(255,255,255,0.11) !important;
-            border-color: rgba(255,255,255,0.35) !important;
-            box-shadow: none !important;
+            box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5) !important;
+            filter: brightness(1.1) !important;
         }
 
         .btn-ghost {
