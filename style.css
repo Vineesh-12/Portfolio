@@ -331,24 +331,42 @@
         #home {
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             padding: 120px 6% 80px;
             max-width: 1280px;
             margin: 0 auto;
-            gap: 80px;
+            gap: 48px;
             position: relative;
         }
 
-        .hero-left {
-            flex: 1;
+        /* TOP ROW — name left, avatar right, the pair is centered */
+        .hero-top-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 72px;
+            width: 100%;
+        }
+
+        /* BOTTOM — all remaining content centered */
+        .hero-bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            width: 100%;
+            text-align: center;
         }
 
         .hero-right {
-            flex: 0 0 380px;
+            flex: 0 0 auto;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
 
         .hero-greeting {
             display: inline-flex;
@@ -377,6 +395,7 @@
             line-height: 1.05;
             letter-spacing: -2px;
             margin-bottom: 10px;
+            text-align: center;
         }
 
         .hero-name .highlight {
@@ -399,6 +418,7 @@
             min-height: 30px;
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 4px;
         }
 
@@ -433,8 +453,9 @@
         .hero-cta {
             display: flex;
             gap: 14px;
-            margin-bottom: 48px;
+            margin-bottom: 36px;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .btn-main {
@@ -480,6 +501,8 @@
         .hero-socials {
             display: flex;
             gap: 14px;
+            justify-content: center;
+            margin-bottom: 32px;
         }
 
         .hero-socials a {
@@ -623,11 +646,12 @@
             gap: 32px;
             padding: 28px 0;
             border-top: 1px solid var(--border);
-            margin-top: 20px;
+            margin-top: 0;
+            justify-content: center;
         }
 
         .hstat {
-            text-align: left;
+            text-align: center;
         }
 
         .hstat-num {
