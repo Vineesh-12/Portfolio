@@ -108,9 +108,7 @@
 
         <!-- BOTTOM: All other content, centered below -->
         <div class="hero-bottom">
-            <div class="typing-wrap reveal delay-2">
-                <span>$ </span><span id="typedText"></span><span class="typing-cursor"></span>
-            </div>
+
             <div class="hero-cta reveal delay-4">
                 <a href="#projects" class="btn-main">View My Work <i class="fas fa-arrow-right"></i></a>
                 <a href="#contact" class="btn-ghost">Let's Talk</a>
@@ -441,7 +439,7 @@
                         </div>
                         <div class="proj-links">
                             <a href="https://github.com/Vineesh-12/inventory-devops-project" target="_blank" rel="noopener" class="proj-link-btn primary-btn"><i class="fab fa-github"></i> GitHub</a>
-                            <a href="#pipeline-viz" class="proj-link-btn"><i class="fas fa-sitemap"></i> Architecture</a>
+
                         </div>
                     </div>
                 </div>
@@ -502,156 +500,9 @@
         </div>
     </section>
 
-    <!-- ============================================================
-     CI/CD PIPELINE ARCHITECTURE
-============================================================ -->
-    <div class="pipeline-section" id="pipeline-viz" style="background:var(--bg);max-width:100%;padding:100px 6%">
-        <div style="max-width:1280px;margin:0 auto">
-            <div class="section-header reveal">
-                <div class="section-label">ARCHITECTURE</div>
-                <h2 class="section-title">CI/CD Pipeline Design</h2>
-                <p class="section-sub">How the Inventory System flows from commit to cloud — hover each stage.</p>
-            </div>
-            <div class="pipeline-wrap reveal">
-                <div class="pipeline-title">// Automated CI/CD · AWS Cloud Deployment</div>
-                <div class="pipeline-stages">
-                    <div class="ps-stage">
-                        <div class="ps-node n-github" title="Developer pushes code">
-                            <i class="fab fa-github" style="font-size:2rem"></i>
-                            <span class="ps-node-label">PUSH</span>
-                        </div>
-                        <div class="ps-label">GitHub Repo</div>
-                    </div>
-                    <div class="ps-connector">
-                        <div class="ps-line"></div>
-                        <div class="ps-arrow"></div>
-                    </div>
-                    <div class="ps-stage">
-                        <div class="ps-node n-jenkins" title="Jenkins triggers build">
-                            <i class="fas fa-infinity" style="font-size:1.8rem;color:#d33833"></i>
-                            <span class="ps-node-label">BUILD</span>
-                        </div>
-                        <div class="ps-label">Jenkins Pipeline</div>
-                    </div>
-                    <div class="ps-connector">
-                        <div class="ps-line"></div>
-                        <div class="ps-arrow"></div>
-                    </div>
-                    <div class="ps-stage">
-                        <div class="ps-node n-docker" title="Docker image built & tested">
-                            <i class="fab fa-docker" style="font-size:2rem;color:#2496ed"></i>
-                            <span class="ps-node-label">IMAGE</span>
-                        </div>
-                        <div class="ps-label">Docker Build</div>
-                    </div>
-                    <div class="ps-connector">
-                        <div class="ps-line"></div>
-                        <div class="ps-arrow"></div>
-                    </div>
-                    <div class="ps-stage">
-                        <div class="ps-node" title="Terraform provisions AWS infra">
-                            <i class="fas fa-layer-group" style="font-size:1.6rem;color:#844fba"></i>
-                            <span class="ps-node-label">PROVISION</span>
-                        </div>
-                        <div class="ps-label">Terraform · AWS</div>
-                    </div>
-                    <div class="ps-connector">
-                        <div class="ps-line"></div>
-                        <div class="ps-arrow"></div>
-                    </div>
-                    <div class="ps-stage">
-                        <div class="ps-node" title="Ansible configures servers">
-                            <i class="fas fa-cogs" style="font-size:1.6rem;color:#e00"></i>
-                            <span class="ps-node-label">CONFIGURE</span>
-                        </div>
-                        <div class="ps-label">Ansible</div>
-                    </div>
-                    <div class="ps-connector">
-                        <div class="ps-line"></div>
-                        <div class="ps-arrow"></div>
-                    </div>
-                    <div class="ps-stage">
-                        <div class="ps-node n-k8s" title="K8s orchestrates containers">
-                            <i class="fas fa-dharmachakra" style="font-size:1.8rem;color:#3970e4"></i>
-                            <span class="ps-node-label">ORCHESTRATE</span>
-                        </div>
-                        <div class="ps-label">Kubernetes</div>
-                    </div>
-                    <div class="ps-connector">
-                        <div class="ps-line"></div>
-                        <div class="ps-arrow"></div>
-                    </div>
-                    <div class="ps-stage">
-                        <div class="ps-node active n-aws" title="Live on AWS">
-                            <i class="fab fa-aws" style="font-size:2rem;color:#f59e0b"></i>
-                            <span class="ps-node-label">LIVE</span>
-                        </div>
-                        <div class="ps-label">AWS Production</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- ============================================================
-     TERMINAL
-============================================================ -->
-    <div class="terminal-section">
-        <div style="max-width:860px;margin:0 auto">
-            <div class="section-header reveal" style="text-align:center">
-                <div class="section-label" style="text-align:center">TOOLBOX</div>
-                <h2 class="section-title" style="text-align:center">Under The Hood</h2>
-            </div>
-            <div class="terminal-wrap reveal">
-                <div class="terminal-header">
-                    <div class="t-dots">
-                        <div class="t-dot td-red"></div>
-                        <div class="t-dot td-yellow"></div>
-                        <div class="t-dot td-green"></div>
-                    </div>
-                    <div class="t-title">vineesh@srm-dev ~ zsh</div>
-                </div>
-                <div class="terminal-body">
-                    <span class="t-line"><span class="t-prompt">vineesh@dev</span> <span class="t-cmd">$
-                            whoami</span></span>
-                    <span class="t-line"><span class="t-out-green">→ Vineesh Reddy | CS Engineer | DevOps
-                            Enthusiast</span></span>
-                    <span class="t-line">&nbsp;</span>
-                    <span class="t-line"><span class="t-prompt">vineesh@dev</span> <span class="t-cmd">$ cat skills.json
-                            | jq '.cloud'</span></span>
-                    <span class="t-line"><span class="t-out-blue">{</span></span>
-                    <span class="t-line"><span class="t-out-muted">&nbsp;&nbsp;"provider": <span
-                                class="t-out-yellow">"AWS"</span>,</span></span>
-                    <span class="t-line"><span class="t-out-muted">&nbsp;&nbsp;"services": <span
-                                class="t-out-yellow">["EC2","S3","VPC","IAM","CloudWatch"]</span>,</span></span>
-                    <span class="t-line"><span class="t-out-muted">&nbsp;&nbsp;"iac": <span
-                                class="t-out-yellow">"Terraform"</span>,</span></span>
-                    <span class="t-line"><span class="t-out-muted">&nbsp;&nbsp;"config": <span
-                                class="t-out-yellow">"Ansible"</span>,</span></span>
-                    <span class="t-line"><span class="t-out-muted">&nbsp;&nbsp;"containers": <span
-                                class="t-out-yellow">["Docker","Kubernetes"]</span></span></span>
-                    <span class="t-line"><span class="t-out-blue">}</span></span>
-                    <span class="t-line">&nbsp;</span>
-                    <span class="t-line"><span class="t-prompt">vineesh@dev</span> <span class="t-cmd">$ git log
-                            --oneline | head -3</span></span>
-                    <span class="t-line"><span class="t-out-green">a3f91b2</span> <span class="t-out-muted">feat:
-                            kubernetes auto-scaling added to inventory</span></span>
-                    <span class="t-line"><span class="t-out-green">c8d1e40</span> <span class="t-out-muted">fix:
-                            terraform VPC subnet routing fixed</span></span>
-                    <span class="t-line"><span class="t-out-green">f2a4b19</span> <span class="t-out-muted">chore:
-                            ansible playbook refactor</span></span>
-                    <span class="t-line">&nbsp;</span>
-                    <span class="t-line"><span class="t-prompt">vineesh@dev</span> <span class="t-cmd">$ echo
-                            $STATUS</span></span>
-                    <span class="t-line"><span class="t-out-green">✓ Open to full-time roles | Graduating 2027 |
-                            Available immediately for internships</span></span>
-                    <span class="t-line"><span class="t-prompt">vineesh@dev</span> <span class="t-cmd">$ <span
-                                id="termCursor"
-                                style="background:var(--accent);display:inline-block;width:8px;height:1em;animation:blink 0.9s step-end infinite;vertical-align:middle"></span></span></span>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
 
     <!-- ============================================================
      EXPERIENCE + EDUCATION
