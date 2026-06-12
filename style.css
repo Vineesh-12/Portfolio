@@ -2401,9 +2401,9 @@
         }
         
         .project-card:hover, .exp-card:hover, .skill-cat:hover, .contact-card:hover {
-            transform: translateY(-4px) !important;
+            transform: translateY(-4px) scale(1.02) !important;
             border-color: rgba(255, 255, 255, 0.1) !important;
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 12px 40px rgba(0, 0, 0, 0.5) !important;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 14px 40px rgba(0, 0, 0, 0.6) !important;
         }
 
         /* Button Refinements — colors defined per-button above */

@@ -277,22 +277,8 @@ const barObs = new IntersectionObserver(entries => {
 document.querySelectorAll('.bar-fill').forEach(el => barObs.observe(el));
 
 /* ================================================================
-   3D CARD TILT — Project cards ONLY (not timeline, not skill cats)
-   Projects are the showcase; everything else should be stable.
+   INTERACTIVE CARDS — Removed 3D tilt for a cleaner 2D responsive feel
    ================================================================ */
-document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mousemove', e => {
-        const rect = card.getBoundingClientRect();
-        const rotX = ((e.clientY - rect.top  - rect.height / 2) / (rect.height / 2)) * -5;
-        const rotY = ((e.clientX - rect.left - rect.width  / 2) / (rect.width  / 2)) *  5;
-        card.style.transform  = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateZ(4px)`;
-        card.style.transition = 'transform 0.08s linear';
-    });
-    card.addEventListener('mouseleave', () => {
-        card.style.transform  = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
-        card.style.transition = 'transform 0.6s cubic-bezier(0.16,1,0.3,1)';
-    });
-});
 
 /* ================================================================
    CONTACT FORM — Focus feedback
