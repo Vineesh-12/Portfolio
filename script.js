@@ -115,7 +115,7 @@ document.querySelectorAll('a, button, .btn-main, .btn-ghost, .btn-resume, .proje
                 const dist = Math.sqrt(dx * dx + dy * dy);
                 if (dist < CONNECT_DIST) {
                     ctx.beginPath();
-                    ctx.strokeStyle = `rgba(99,102,241,${(1 - dist / CONNECT_DIST) * 0.14})`;
+                    ctx.strokeStyle = `rgba(226,135,67,${(1 - dist / CONNECT_DIST) * 0.14})`;
                     ctx.lineWidth   = 0.6;
                     ctx.moveTo(particles[i].x, particles[i].y);
                     ctx.lineTo(particles[j].x, particles[j].y);
@@ -128,7 +128,7 @@ document.querySelectorAll('a, button, .btn-main, .btn-ghost, .btn-resume, .proje
         particles.forEach(p => {
             ctx.beginPath();
             ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(99,102,241,${p.a})`;
+            ctx.fillStyle = `rgba(226,135,67,${p.a})`;
             ctx.fill();
 
             // Move
