@@ -419,7 +419,6 @@
                 <p class="section-sub">Real projects, real impact — not just tutorial clones.</p>
             </div>
             <div class="projects-grid">
-                <!-- Featured -->
                 <div class="glass project-card featured reveal">
                     <div class="proj-banner pb1" style="min-height:280px">
                         <i class="fas fa-project-diagram proj-banner-icon"></i>
@@ -430,28 +429,27 @@
                                 <span class="t-blue">Kubernetes</span>
                                 <span class="t-amber">AWS</span>
                                 <span class="t-green">Docker</span>
+                                <span class="t-mono">Jenkins</span>
                             </div>
                             <div class="proj-banner-num">FEATURED PROJECT</div>
                         </div>
                     </div>
                     <div class="proj-body">
-                        <h3>Automated CI/CD — Inventory System on AWS</h3>
-                        <p>End-to-end DevOps pipeline on AWS. Infrastructure provisioned via Terraform (VPC, EC2),
-                            configured with Ansible, containerized with Docker, and orchestrated with Kubernetes for HA
-                            deployment. Jenkins automates the pipeline from GitHub push to production.</p>
+                        <h3>Automated CI/CD Deployment of Inventory System on AWS</h3>
+                        <p>Developed an automated CI/CD pipeline to deploy an Inventory Management web application on AWS cloud.</p>
                         <div class="proj-metrics">
-                            <div class="pm"><i class="fas fa-check-circle"></i> Infrastructure as Code</div>
-                            <div class="pm"><i class="fas fa-check-circle"></i> Zero-downtime Deploys</div>
-                            <div class="pm"><i class="fas fa-check-circle"></i> Auto-scaling Pods</div>
+                            <div class="pm"><i class="fas fa-check-circle"></i> Infrastructure as Code (Terraform → VPC, EC2)</div>
+                            <div class="pm"><i class="fas fa-check-circle"></i> Ansible Server Configuration</div>
+                            <div class="pm"><i class="fas fa-check-circle"></i> Docker Containerization</div>
+                            <div class="pm"><i class="fas fa-check-circle"></i> Kubernetes Orchestration</div>
                         </div>
                         <div class="proj-links">
                             <a href="https://github.com/Vineesh-12/inventory-devops-project" target="_blank" rel="noopener" class="proj-link-btn primary-btn"><i class="fab fa-github"></i> GitHub</a>
-
                         </div>
                     </div>
                 </div>
 
-                <!-- ServiceNow Supply Chain Command Center -->
+                <!-- Supply Chain Command Center -->
                 <div class="glass project-card reveal delay-1">
                     <div class="proj-banner pb2">
                         <i class="fas fa-layer-group proj-banner-icon"></i>
@@ -461,16 +459,18 @@
                                 <span class="t-blue">JavaScript</span>
                                 <span class="t-purple">REST API</span>
                                 <span class="t-teal">Flow Designer</span>
+                                <span class="t-mono">ACL Security</span>
                             </div>
                         </div>
                     </div>
                     <div class="proj-body">
-                        <h3>Supply Chain Command Center</h3>
-                        <p>Production-grade Supply Chain Management application built natively on ServiceNow — unifying procurement, logistics, inventory, and vendor management into a single automated command center with REST webhooks and SLA enforcement.</p>
+                        <h3>Supply Chain Command Center — Enterprise Automation on ServiceNow</h3>
+                        <p>Production-grade Supply Chain Management application built natively on ServiceNow.</p>
                         <div class="proj-metrics">
-                            <div class="pm"><i class="fas fa-check-circle"></i> REST Webhook Integration</div>
-                            <div class="pm"><i class="fas fa-check-circle"></i> SLA Automation</div>
-                            <div class="pm"><i class="fas fa-check-circle"></i> Multi-vendor Portal</div>
+                            <div class="pm"><i class="fas fa-check-circle"></i> Unified Procurement, Logistics & Inventory</div>
+                            <div class="pm"><i class="fas fa-check-circle"></i> REST Webhooks for 3PL Tracking</div>
+                            <div class="pm"><i class="fas fa-check-circle"></i> Dynamic SLA & Penalty Automation</div>
+                            <div class="pm"><i class="fas fa-check-circle"></i> Multi-vendor Portal (Row-level Isolation)</div>
                         </div>
                         <div class="proj-links">
                             <a href="https://github.com/Vineesh-12/supply-chain-command-center" target="_blank" rel="noopener" class="proj-link-btn primary-btn"><i class="fab fa-github"></i> GitHub</a>
@@ -487,16 +487,20 @@
                                 <span class="t-purple">Python</span>
                                 <span class="t-amber">Streamlit</span>
                                 <span class="t-green">Scikit-Learn</span>
+                                <span class="t-blue">XGBoost</span>
+                                <span class="t-teal">SHAP/LIME</span>
                             </div>
                         </div>
                     </div>
                     <div class="proj-body">
-                        <h3>CardioCare AI — Clinical Decision Support</h3>
-                        <p>University Research Project — engineered a clinical decision-support web app using Streamlit to predict heart disease probability from 13 patient vitals. Built a Stacking Ensemble Classifier with Explainable AI (SHAP & LIME) and an interactive "What-If" simulator.</p>
+                        <h3>CardioCare AI — Clinical Decision Support for Heart Disease</h3>
+                        <p>University Research Project — engineered a clinical decision-support web application using Streamlit to predict heart disease probability from 13 patient vitals.</p>
                         <div class="proj-metrics">
-                            <div class="pm"><i class="fas fa-check-circle"></i> Explainable AI (SHAP/LIME)</div>
-                            <div class="pm"><i class="fas fa-check-circle"></i> Stacking Ensemble Model</div>
-                            <div class="pm"><i class="fas fa-check-circle"></i> NLG Clinical Reports</div>
+                            <div class="pm"><i class="fas fa-check-circle"></i> Stacking Ensemble Classifier (RF, KNN, LR)</div>
+                            <div class="pm"><i class="fas fa-check-circle"></i> Explainable AI (SHAP & LIME)</div>
+                            <div class="pm"><i class="fas fa-check-circle"></i> Interactive "What-If" Simulator (Plotly)</div>
+                            <div class="pm"><i class="fas fa-check-circle"></i> NLG Pipeline for EHR Notes</div>
+                            <div class="pm"><i class="fas fa-check-circle"></i> Deployed on Streamlit Community Cloud</div>
                         </div>
                         <div class="proj-links">
                             <a href="https://github.com/Vineesh-12" target="_blank" rel="noopener" class="proj-link-btn primary-btn"><i class="fab fa-github"></i> GitHub</a>
@@ -678,8 +682,16 @@
             </div>
             <div class="github-cards">
                 <div class="github-card-img reveal delay-1">
-                    <img src="https://streak-stats.demolab.com?user=Vineesh-12&theme=dark&background=000000&border=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=fafafa&currStreakLabel=a3a3a3&sideLabels=a3a3a3&dates=737373&hide_border=true"
+                    <img src="https://github-readme-streak-stats-eight.vercel.app?user=Vineesh-12&theme=dark&background=000000&border=000000&stroke=ffffff&ring=e63946&fire=e63946&currStreakNum=ffffff&sideNums=fafafa&currStreakLabel=e63946&sideLabels=a3a3a3&dates=737373&hide_border=true"
                         alt="GitHub Streak" loading="lazy">
+                </div>
+                <div class="github-card-img reveal delay-2">
+                    <img src="https://github-readme-stats.vercel.app/api?username=Vineesh-12&show_icons=true&theme=dark&bg_color=000000&title_color=e63946&icon_color=e63946&text_color=ffffff&border_color=000000&hide_border=true"
+                        alt="GitHub Stats" loading="lazy">
+                </div>
+                <div class="github-card-img reveal delay-3">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vineesh-12&layout=compact&theme=dark&bg_color=000000&title_color=e63946&text_color=ffffff&border_color=000000&hide_border=true"
+                        alt="Top Languages" loading="lazy">
                 </div>
             </div>
         </div>
